@@ -2,7 +2,7 @@ import express from "express"
 import 'dotenv/config'
 const app=express()
 const PORT=3000;
-
+// hello
 app.get('/',
 	function (req, res) {
 		res.locals.user = 'GeeksforGeeks';
