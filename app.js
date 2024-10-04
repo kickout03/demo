@@ -1,5 +1,5 @@
 import express from "express"
-
+import 'dotenv/config'
 const app=express()
 const PORT=3000;
 
@@ -10,11 +10,11 @@ app.get('/',
 		res.end();
 	});
 
-app.listen(PORT,
+app.listen(process.env.PORT,
 	function (err) {
 		if (err) console.log(err);
 		console.log(
 			"Server listening on PORT",
-			PORT
+			process.env.PORT
 		);
 	});
