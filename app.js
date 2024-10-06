@@ -9,7 +9,7 @@ app.get('/',
 		console.log(res.locals);
 		res.end();
 	});
-
+// hello 10/06
 app.listen(process.env.PORT,
 	function (err) {
 		if (err) console.log(err);
